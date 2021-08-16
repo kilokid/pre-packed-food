@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
         
         tabsContent.forEach(item => {
             item.classList.add('hide');
-            item.classList.remove('show', 'fade');
+            item.classList.remove('show');
         });
 
         tabs.forEach(item => {
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	}
 
 	function showTabContent(i = 0) {
-        tabsContent[i].classList.add('show', 'fade');
+        tabsContent[i].classList.add('show');
         tabsContent[i].classList.remove('hide');
         tabs[i].classList.add('tabheader__item_active');
     }
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
     // Timer
 
-    const deadline = '2020-05-11';
+    const deadline = '2021-09-11';
 
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -298,4 +298,8 @@ window.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }, 4000);
     }
+
+    fetch('http://localhost:3000/menu')
+    .then(data => data.json())
+    .then(res => console.log(res));
 });
