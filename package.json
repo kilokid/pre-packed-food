@@ -1,0 +1,22 @@
+{
+  "name": "pre-packed-food",
+  "version": "1.0.0",
+  "description": "js project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kilokid/pre-packed-food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kilokid/pre-packed-food/issues"
+  },
+  "homepage": "https://github.com/kilokid/pre-packed-food#readme",
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  }
+}
